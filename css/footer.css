@@ -1,0 +1,68 @@
+.wrapper3{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr;
+     
+    border: 2px solid white;
+    color: white; 
+}
+
+/************************************************************************************/
+/***********************************MAPA DEL SITIO***********************************/
+/************************************************************************************/
+
+
+.mapa-sitio ul{
+    list-style: none;
+}
+
+.mapa-sitio a{
+    color: white;
+
+}
+
+.mapa-sitio{
+    margin: 20px;
+}
+
+.submenu-mapa a{
+    margin-left: 70px;
+    
+    transition: background-color 600ms;
+}
+
+.mapa-sitio a:hover{
+    color: red;
+    background-color: white;
+    border-radius: 5px 5px 5px 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/************************************************************************************/
+/**********************************INDORMACION CLUB**********************************/
+/************************************************************************************/
+.datos{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.datos a{
+    color: red;
+}
+
+@media(max-width: 600px){
+
+    .pie .wrapper3{
+        display: block;
+    }
+    .pie .wrapper3 .mapa-sitio{
+        display: none;
+    }
+    .pie .wrapper3 .datos{
+        align-items: center;
+
+    }
+}

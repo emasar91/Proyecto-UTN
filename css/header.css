@@ -1,0 +1,137 @@
+/************************************************************************************/
+/*********************************CABECERA*******************************************/
+/************************************************************************************/
+
+.cabecera{
+    margin-top: 16px;
+    height: 82px;
+    background-color: rgb(190,34,27);
+    display: flex; 
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/************************************************************************************/
+/*******************************BARRA NAVEGACION*************************************/
+/************************************************************************************/
+
+.menu{
+    width: 70%;
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+
+.menu ul{
+    list-style: none;
+    text-decoration-line: none;
+}
+
+.menu-lista{
+    display: flex;
+    list-style: none;
+}
+
+.lista-item{
+    flex-grow: 1;
+}
+
+.menu-lista a{
+    flex-grow: 1;
+    text-align: center;
+    display: block;
+    color: black;
+    transition: background-color 600ms;
+    text-decoration: none;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.menu-lista a:hover{
+    color: white;
+    background-color: black;
+}
+
+
+
+
+.menu-hamburguesa{
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    display: none;
+    margin: 0;
+    padding-top: 15px;
+    position: absolute;
+    z-index: 10;
+
+}
+.lista-item-hamburguesa{
+    padding: 13px 28px;
+    list-style-type: none;
+    border-bottom: 1px solid gray;
+}
+
+.lista-item-hamburguesa a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.boton-cerrar{
+    height: 46px;
+    width: 46px;
+    background-image: url(../imagenes/x1.jpg);
+    background-size: contain;
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-bottom: 20px; 
+    border-radius: 50px 50px 50px 50px;
+}
+
+.boton-hamburguesa{
+    height: 46px;
+    width: 46px;
+    background-image: url(../imagenes/hamburguesa.png);
+    background-size: contain;
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 5px;
+    border-radius: 50px 50px 50px 50px;
+    display: none;
+}
+
+.abrir{
+    display: block;
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+}
+
+.mostrar{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 600px){
+
+    .menu{
+        margin: auto;
+    }
+    .menu-lista{
+            display: none;
+    }
+    .boton-hamburguesa{
+        display: block;
+}
+}

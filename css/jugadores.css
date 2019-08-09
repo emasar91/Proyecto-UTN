@@ -1,0 +1,91 @@
+body{
+    background-image: url(../imagenes/pattern.png);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font: 14px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.cabecera, .contenedor,.pie {
+	max-width: 1000px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.seccion{
+    background-image: url(../imagenes/seccion2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+}
+.seccion h1 {
+    color: white;
+    text-align: center;
+    vertical-align: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 30px;
+}
+
+/************************CARTAS***********/
+
+
+.cartas{
+    width: 100%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cartas .carta{
+    position: relative;
+    height: 200px;
+    width: 150px;
+    margin: 20px;
+    background-color: rgb(190,34,27);
+    box-shadow: 2px 2px 10px 0  white;
+}
+
+.carta .cara1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.carta .cara2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: wheat;
+    transition: 0.5s;
+    overflow: hidden;
+    
+}
+
+.contenido{
+    text-align: center;
+    padding: 2px;
+}
+
+.contenido h2{
+    color: black;
+}
+
+.carta:hover .cara2{
+    height: 45%;
+}
+
